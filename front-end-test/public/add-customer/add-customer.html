@@ -1,0 +1,7 @@
+<div class="AddCustomer">
+	<input type="text" placeholder="Name" ng-model="name"/>
+	<select ng-options="product.name for product in products" ng-model="product">
+		<option value="">Choose Product</option>
+	</select>
+	<button ng-click="add()">Add</button>
+</div>

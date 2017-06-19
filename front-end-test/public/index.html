@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Queue App</title>
+		
+		<script src="/bower_components/angularjs/angular.js"></script>
+		<script src="/QueueApp.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="/css/jva.style.css">
+	</head>
+	<body ng-app="qudini.QueueApp" ng-controller="QueueController">
+
+		<h2>Add Customer</h2>
+		<add-customer on-added="onCustomerAdded()"></add-customer>
+
+		<h2>Queing Customers</h2>
+		<ul class="customers">
+			<li ng-repeat="customer in customers">
+				<customer customer="customer" on-served="onCustomerServed()" on-removed="onCustomerRemoved()"></customer>
+			</li>
+		</ul>
+
+		<h2>Served customers</h2>
+		<ul class="customers served" >
+			<li ng-repeat="customer in customersServed">
+				<customer customer="customer" on-served="onCustomerServed()" on-removed="onCustomerRemoved()"></customer>
+			</li>
+		</ul>
+
+	</body>
+</html>

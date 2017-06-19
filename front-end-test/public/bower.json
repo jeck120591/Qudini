@@ -1,0 +1,9 @@
+{
+  "name": "qudini-front-end-test",
+  "license": "UNLICENSED",
+  "private": true,
+  "homepage": "https://github.com/qudini/front-end-test#readme",
+  "dependencies": {
+    "angularjs": "~1.3.15"
+  }
+}

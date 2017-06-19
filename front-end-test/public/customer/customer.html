@@ -1,0 +1,9 @@
+<div class="customer-item">
+	<span>{{ customer.name }}</span>
+	<span>{{ customer.product.name }}</span>
+	<span>{{ queuedTime.toString() }}</span>
+	<span class="actions">
+		<button class="btn-queued" ng-click="serve()">Serve</button>
+		<button class="btn-served" ng-click="remove()">Remove</button>
+	</span>
+</div>
